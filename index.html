@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accounts - Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #0f172a;
+        }
+        .secure-badge {
+            background-color: #f0fdf4;
+            color: #166534;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid #dcfce7;
+        }
+        .account-card {
+            background-color: #1b365d;
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 10px rgba(27, 54, 93, 0.2);
+        }
+        .account-name-tag {
+            font-size: 14px;
+            font-weight: 600;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .account-type {
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 6px;
+        }
+        .account-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .balance {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+        }
+        .account-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 14px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        .section-subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+            background-color: #f8fafc;
+            color: #0f172a;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-input:focus {
+            border-color: #1b365d;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Header -->
+        <div class="header">
+            <h1>My Accounts</h1>
+            <div class="secure-badge">
+                🔒 Secure Access
+            </div>
+        </div>
+
+        <!-- Account Overview Card -->
+        <div class="account-card">
+            <div class="account-name-tag">Vidzro Selassie</div>
+            <div class="account-type">CHECKING •••• 0547838633</div>
+            <div class="account-title">Checking Account</div>
+            <div class="balance">$298,000.00</div>
+            <div class="account-footer">
+                <span>🇺🇸 USD</span>
+                <span>Member since 2026</span>
+            </div>
+        </div>
+
+        <!-- Send Money Section -->
+        <div>
+            <div class="section-title">Send Money</div>
+            <div class="section-subtitle">Transfer funds to any recipient.</div>
+            
+            <div class="form-group">
+                <label class="form-label">Recipient username or phone</label>
+                <input type="text" class="form-input" placeholder="@username or +1 (555) 000-0000">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Amount</label>
+                <input type="text" class="form-input" value="$ 0.00">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
